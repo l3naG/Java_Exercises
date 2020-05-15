@@ -33,7 +33,7 @@ public class Demo3 {
     private static boolean addAlphabetically(String newFruit, LinkedList<String> fruit) {
         ListIterator<String> stringListIterator = fruit.listIterator();
         while (stringListIterator.hasNext()) {
-            int comparison = stringListIterator.next().compareTo(newFruit.toLowerCase());
+            int comparison = stringListIterator.next().compareTo(newFruit);
             if (comparison > 0) {
                 stringListIterator.previous();
                 stringListIterator.add(newFruit);
